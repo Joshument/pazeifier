@@ -7,8 +7,10 @@ edition = "2021"
 
 [dependencies]
 bytemuck = "1.13.1"
+gif = "0.12.0"
 image = "0.24.6"
-openssl-sys = { version = "0.9.87", features = ["vendored"] }
+# openssl-sys = { version = "0.9.87", features = ["vendored"] }
 poise = "0.5.5"
 reqwest = "0.11.17"
+thiserror = "1.0.40"
 tokio = { version = "1.28.1", features = ["rt-multi-thread"] }
