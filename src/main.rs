@@ -13,7 +13,9 @@ async fn on_error(error: poise::FrameworkError<'_, (), Error>) {
         poise::FrameworkError::Command { error, ctx } => {
             format!("Error in command `{}`: {:?}", ctx.command().name, error,)
         }
-        _ => String::from("Something bad happened and I am too lazy to re-route it to the bot sorry"),
+        _ => {
+            String::from("Something bad happened and I am too lazy to re-route it to the bot sorry")
+        }
     };
 
     match error.ctx() {
